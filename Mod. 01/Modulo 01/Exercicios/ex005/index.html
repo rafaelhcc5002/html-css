@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="miranha.ico" type="image/x-icon">
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <h1>Formatações:</h1>
+    <h2>-Todas as formatações que eu saber, serão salvas aqui-</h2>
+
+    <h3>I. Negrito (Destaque)</h3>
+    <h4>Existem duas formas: </h4>
+
+    <p> * &lt;b&gt;texto&lt;/b&gt; (<b>Este texto esta em negrito</b>)  &rarr; Tag B (Não semântica) <br>
+        * &lt;strong&gt;texto&lt;/strong&gt; (<strong>Este texto esta em negrito</strong>) &rarr; Tag Strong (semântica)
+    </p>
+
+    <h3>II. Italico (Ênfase)</h3>
+    <h4>Existem duas formas: </h4>
+
+    <p> * &lt;i&gt;texto&lt;/i&gt; (<i>Este texto esta em italico</i>)  &rarr; Tag i (Não semântica) <br>
+        * &lt;em&gt;texto&lt;/em&gt; (<em>Este texto esta em negrito</em>) &rarr; Tag EM (semântica)</p>
+    
+    <h3>III. Texto marcado</h3>
+
+    <p>
+        *&lt;mark&gt;texto&lt;/mark&gt; (<mark>Este texto esta marcado <strong>em amarelo</strong></mark>)  &rarr; Tag MARK
+        <br>
+        <br>
+        -Os proximos, usam um pouco de CSS:
+        <br>
+        <br>
+        * &lt;mark style= "background-color:<em>cor</em>&gt;texto marcado&lt;/mark&gt; (<mark style="background-color: chartreuse;"> texto marcado <strong>com outra cor</strong></mark>) <br>
+        -Este acima, funciona exclusivamente para este texto que foi escrito   &uarr;	&uarr;	&uarr;	&uarr;	&uarr;	&uarr;	&uarr;	&uarr;	&uarr;	&uarr;
+        </p>
+    <h3>IV. Texto grandes e pequenos</h3>
+
+    <p> * &lt;big&gt;texto&lt;/big&gt; (texto <big> maior</big>)  &rarr; Tag BIG, para aumentar o texto
+    -<strong>ESTE COMANDO ESTÁ OBSOLETO</strong> <br>
+
+        * &lt;small&gt;texto&lt;/small&gt; (texto <small> menor</small>)  &rarr; Tag SMALL, para diminuir o texto
+    </p>
+    
+    <h3>V. Texto deletado (Riscado)</h3>
+
+    <p> * &lt;del&gt;texto&lt;/del&gt; (<del>texto</del>)  &rarr; Tag DEL</p>
+
+    <h3>VI. Texto inserido (Sublinhado)</h3>
+    <h4>Existem duas formas: </h4>
+
+    <p> * &lt;ins&gt;texto&lt;/ins&gt; (<ins>texto</ins>)  &rarr; Tag INS (semântica) <br>
+        * &lt;u&gt;texto&lt;/u&gt; (<u>texto</u>)  &rarr; Tag U (Não semântica)
+    </p>
+
+    <h3>VII. Texto sobrescrito</h3>
+
+    <p> * &lt;sup&gt;texto&lt;/sup&gt; (x<sup>2</sup>+3)  &rarr; Tag SUP (Em cima)</p>
+
+    <h3>VIII. Texto subscrito</h3>
+
+    <p> * &lt;sub&gt;texto&lt;/sub&gt; (H<sub>2</sub>O)  &rarr; Tag SUB (Em baixo)</p>
+
+    <h3>IX. Codigo-fonte</h3>
+
+    <p> São comandos, ou parte de um comandos 
+        <br>
+        * &lt;code&gt;texto&lt;/code&gt; (<code>printf("%d textos lalala", numero);</code>)  &rarr; Tag CODE <br>
+        -Esse codigo transforma em uma fonte monoespaçada
+        <br>
+        <br>
+        -Outra maneira, para se criar indetentações e espaçamentos é usando o CODE dentro do PRE:
+        <br>
+        * &lt;pre&gt; 
+            <br>  &lt;/pre&gt;
+            <br>
+            <br>
+
+        -Exemplo    
+        
+         <pre>
+                <code>
+        numero = int(input("Digite um número: "))
+
+        if numero % 2 == 0:
+            print("O número é par.")
+        else:
+            print("O número é ímpar.")
+                </code>
+         </pre>
+         
+    </p>
+
+    <h3>Citações simples</h3>
+
+    <p>
+        * &lt;q&gt;texto&lt;/q&gt; (Senhor Irineu disse: <q>Ireneu você não sabe nem eu</q>)  &rarr; Tag q
+    </p>
+
+    <h3>Citações completas</h3>
+    
+    <p>* &lt;blockquote&gt;texto&lt;/blockquote&gt; &rarr; Tag blockquote
+
+    -Exemplo
+    <br>
+    <br>
+    -Segundo o autor darara
+
+    <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, pariatur doloribus blanditiis odit laborum similique ipsa placeat laudantium nihil ullam tempora illo laboriosam corrupti sed dolor adipisci quis libero! Optio.</blockquote>
+
+    -Usando o parametro (cite)
+    <br>
+
+    * &lt;blockquote cite= "link de referencia>"&gt;texto&lt;/blockquote&gt;
+
+    <blockquote cite="https://www.google.com.br/books/edition/O_Pequeno_Pr%C3%ADncipe_cole%C3%A7%C3%A3o_Cl%C3%A1ssicos/1D9KEAAAQBAJ?hl=pt-BR&gbpv=1&dq=livros+pdf+gratis&printsec=frontcover">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, pariatur doloribus blanditiis odit laborum similique ipsa placeat laudantium nihil ullam tempora illo laboriosam corrupti sed dolor adipisci quis libero! Optio.</blockquote>
+    </p>
+        
+    <h3>Abreviações</h3>
+
+    <p>
+        * &lt;abbr title = "significado da sigla/abreviação"&gt;texto&lt;/abbr&gt; &rarr; Tag abbr
+    
+     <blockquote>- Eu estudo <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></blockquote>
+    </p>
+
+    <h3>Texto invertido</h3>
+
+    <p>
+        * &lt;bdo dir= "rtl"&gt;texto&lt;/bdo&gt; &rarr; Tag bdo (rtl)<br>
+        -Right to left (Direita para esquerda) <br> <br>
+        <blockquote> <bdo dir="rtl">OTXET</bdo> &rarr; A palavra está escrita ao contrário </blockquote> <br>
+        * &lt;bdo dir= "ltr"&gt;texto&lt;/bdo&gt; &rarr; Tag bdo (ltr)<br>
+        -Left to right (Esquerda para direita)
+        <blockquote> <bdo dir="ltr">OTXET</bdo> </blockquote> 
+
+    </p>
+
+</body>
+</html>

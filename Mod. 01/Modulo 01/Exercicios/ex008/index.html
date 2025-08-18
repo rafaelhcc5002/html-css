@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="miranha.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+        <h1>Imagens Dinâmicas</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua
+            o tamanho do seu navegador. 
+        </p>
+
+        <p><blockquote>-Criando imagens de tamanhos diferentes
+
+        </blockquote></p>
+
+        <p>*Criar e modificar a/as imagens em outro programa</p>
+        <ul type"disc">
+                <li>GIMP;</li>
+                <li>Photoshop;</li>
+        </ul>
+        
+        <p>Exemplo de tamanho:
+
+            <ul type="disc">
+                <li>Pequeno: 300x300;</li>
+                <li>Média: 700x700;</li>
+                <li>Grande: 1000x1000;</li>
+            </ul>
+        </p>
+
+    <p>Comando: &lt;picture&gt; 
+                <blockquote>&lt;source media="(max-width: SIZEpx)" srcset="Imagem.png" type="image/png"&gt;  Foto pequena</blockquote> 
+                <blockquote>&lt;source media="(max-width: SIZEpx)" srcset="Imagem.png" type="image/png"&gt;  Foto média</blockquote> 
+                <blockquote><ins>&lt;img src="Imagem.png" alt="Imagem flexivel"&gt;</ins> Foto grande</blockquote>
+                &lt;/picture&gt;
+    </p>
+
+    <p>
+        <p>Exemplo: </p> 
+        <picture>
+            <source media="(max-width: 750px)" srcset="Imagens/ImagemP.jpg" type="image/png"> 
+            <source media="(max-width: 1050px)" srcset="Imagens/ImagemM.jpg" type="image/png">
+            <img src="Imagens/ImagemG.jpg" alt="Imagem flexivel"> 
+        </picture>
+    </p>
+
+    <h1>Reproduzindo audios</h1>
+
+    <p>&lt;audio src= "arquivo.mp3" controls autoplay&gt; &lt;/audio&gt;</p>
+
+    <audio src="Audios/audioMP3.mp3.mp3" controls autoplay>Audio01</audio>
+
+    <p>-Outra forma: </p>
+
+    <p>&lt;audio preload= "   " controls autoplay loop&gt; 
+        <blockquote>&lt;source src="arquivo.mp3" type="audio/mpeg"&gt; <br>
+                    &lt;source src="arquivo.ogg" type="audio/ogg"&gt; <br>
+                    &lt;source src="arquivo.wav" type="audio/wav"&gt;
+                
+        </blockquote>
+        &lt;/audio&gt;
+    </p>
+
+    <p>-No atributo <ins>preload="    "</ins> temos:
+        <ul type="disc">
+            <li>auto (Padrão): Carrega o arquivo de audio inteiro assim que a pagina for carregada, mesmo que o usuario nunca aperte o play
+                <p>Exemplo:</p>
+                <audio preload="auto" controls>
+                    <source src="Audios/audioMP3.mp3" type="audio/mpeg">
+                    <source src="Audios/audioOGG.ogg" type="audio/ogg">
+                    <source src="Audios/audioWAV.wav" type="audio/wav">
+                    
+                </audio>
+                
+            </li>
+            <li>metadata: Carrega apenas as informações sobre o arquivo (tamanho, tempo, informações de direitos, etc)
+                <p>Exemplo:</p>
+                <audio preload="metadata" controls>
+                    <source src="Audios/audioMP3.mp3" type="audio/mpeg">
+                    <source src="Audios/audioOGG.ogg" type="audio/ogg">
+                    <source src="Audios/audioWAV.wav" type="audio/wav">
+                   
+                </audio>
+                
+            </li>
+            <li>none: Não vai carregar nada até que o usuario clique no botão play ou um script inicie a reprodução
+                <p>Exemplo:</p>
+                <audio preload="none" controls>
+                    <source src="Audios/audioMP3.mp3" type="audio/mpeg">
+                    <source src="Audios/audioOGG.ogg" type="audio/ogg">
+                    <source src="Audios/audioWAV.wav" type="audio/wav">
+                    
+                </audio>
+                
+            </li>
+        </ul>
+    </p>
+
+    <P>-O atributo <ins>controls</ins>, vai apresentar o player na tela. Caso não seja colocado na tag &lt;audio&gt;, o controle será transparente e o usuario não poderá interagir com ele</P>
+    <p>-O <ins>autoplay</ins>, vai iniciar a reprodução do audio assim que a pagina carregar</p>
+    <p>-O <ins>loop</ins>, vai fazer com que o audio seja repetido eternamente assim que terminar a reprodução</p>
+
+    <h1>Reproduzindo videos</h1>
+    
+    <p>-Videos hospedados no próprio servidor (localmente)</p>
+
+    &lt;video width="Sizepx" poster="arquivo.jpg" controls autoplay&gt; <br>
+    <blockquote>
+            &lt;source src="arquivo.mp4" type="video/mp4"&gt; <br>
+            &lt;source src="arquivo.webm" type="video/webm"&gt; <br>
+            &lt;source src="arquivo.ogg" type="video/ogg"&gt; <br>
+    </blockquote>
+    &lt;/video&gt;
+
+    <p>-<ins>Width</ins>: Configura a largura do video em px</p>
+    <p>-<ins>Poster</ins>: Configura uma imagem que vai aparecer como capa do video</p>
+    <p>-<ins>autoplay</ins>: Diz ao navegador se o video vai começar a tocar automaticamente</p>
+
+    <video width="600" controls autoplay>
+        <source src="Videos/videomp4.mp4" type="video/mp4">
+        <source src="Videos/videowebm.webm" type="video/webm">
+        <source src="Videos/videoogv.ogv" type="video/ogg">
+        <source src="Videos/videom4v.m4v" type="video/m4v">
+        
+    </video>
+
+    <table border="1"  width="600">
+        <tr>
+            <th>Navegador</th>
+            <th>Arquivos Compatíveis</th>
+        </tr>
+        <tr>
+            <td>Google Chrome</td>
+            <td>.mp4/.m4v/.webm/.ogv</td>
+        </tr>
+        <tr>
+            <td>Mozilla Firefox</td>
+            <td>.webm/.ogv</td>
+        </tr>
+        <tr>
+            <td>Microsoft Edge</td>
+            <td>.mp4/.m4v</td>
+        </tr>
+        <tr>
+            <td>Apple Safari</td>
+            <td>.mp4/.m4v</td>
+        </tr>
+        <tr>
+            <td>Opera</td>
+            <td>.webm/.ogv</td>
+        </tr>
+    </table>
+
+    <p>-Videos hospedados em servidores externos</p>
+
+    <p>-Será necessário copiar o codigo indo em <strong>Compartilhar</strong> &rarr; <strong>Incorporar</strong></p>
+    <p><blockquote>Pode fazer isso tanto no Youtube ou no Vimeo, ou em qualquer outro site de servidor próprio</blockquote></p>
+
+    <h3>Este exemplo é de um video vindo do YouTube &#x2B8F;</h3>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DDWlGRUhLzI?si=KPX7BEcIfXGHhRRO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h3>Este exemplo é de um video vindo do Vimeo &#x2B8F;</h3>
+
+    <iframe src="https://player.vimeo.com/video/1062200323?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen title="Snooze Quest | adult swim SMALLS"></iframe>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to right, #000000, #242424, #9e9d9d, #b3b3b3);
+    color: #ffffff;
+
+}
+h1 {
+    background-image: linear-gradient(to bottom, #FF0000, #940000, #460000);
+    color: #ffffff;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    background-image: linear-gradient(to left, #ffffff, #8a8a8a, #242424);
+    color: #f33b3b;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+    
+    color: #f33b3b;
+    
+}
+

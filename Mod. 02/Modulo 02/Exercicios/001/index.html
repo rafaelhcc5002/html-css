@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começo do CSS</title>
+</head>
+<body style="background-color: rgb(61, 61, 61); color: rgb(255, 255, 255); font-size: medium;">
+
+        <h1>Revisãozinha básica</h1>
+        <h2>Conteúdo em CSS</h2>
+        <h3>Estilo CSS Inline </h3>
+        <h4>Coloca o CSS dentro dos parametros</h4>
+
+        <p>&lt;body style= "background-color: COR;" &gt; &#8594; Coloca cor no fundo do site </p>
+        <h2 style="background-color: blueviolet;" >EXEMPLO</h2>
+        <p>&lt;h1 style= "color: COR;"&gt; &#8594; Coloca cor na palavra</p>
+        <h2 style="color:chocolate">EXEMPLO</h2>
+        <p>&lt;body style= "font-family:FONTE;" &gt; &#8594; Muda a fonte</p>
+        <h2 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif "> EXEMPLO </h2>
+        <p>&lt;h1 style= "font-size: TAMANHO;" &gt; &#8594; Muda o tamanho da fonte</p>
+        <h2 style="font-size: 10px;">EXEMPLO</h2>
+        <p>&lt;h1 style= "font-weight: PESO;" &gt; &#8594; Muda o peso da fonte</p>
+        <h2 style="font-weight:bolder;">EXEMPLO 01</h2> <h2 style="font-weight:initial">EXEMPLO 02</h2>
+        <p>&lt;h1 style= "text-align: ALINHAMENTO;" &gt; &#8594; Alinha o texto</p>
+        <h2 style="text-align: center;">EXEMPLO</h2>
+        <p>&lt;h1 style= "text-decoration: DECORAÇÃO;" &gt; &#8594; Coloca decoração no texto</p>
+        <h2 style="text-decoration: underline;">EXEMPLO</h2>
+        <p>&lt;h1 style= "text-transform: TRANSFORMAÇÃO;" &gt; &#8594; Transforma o texto</p>
+        <h2 style="text-transform: lowercase;">EXEMPLO</h2>
+        <p>&lt;h1 style= "text-shadow: SOMBRA;" &gt; &#8594; Coloca sombra no texto</p>
+        <h2 style="text-shadow: 2px 2px 5px red;">EXEMPLO</h2>
+        <p>&lt;h1 style= "text-indent: RECUO;" &gt; &#8594; Coloca recuo no texto</p>
+        <h2 style="text-indent: 90px;">EXEMPLO</h2>
+        <p>&lt;h1 style= "letter-spacing: ESPAÇO;" &gt; &#8594; Coloca espaço entre as letras</p>
+        <h2 style="letter-spacing: 8px;">EXEMPLO</h2>
+        <p>&lt;h1 style= "line-height: ALTURA;" &gt; &#8594; Coloca altura entre as linhas</p>
+        <h2 style="line-height: 90px;">EXEMPLO</h2>
+        <h2>Entre outros</h2>
+    <h2 style="text-align: center; background-color: rgb(255, 0, 0); color: rgb(255, 255, 255);">NÃO RECOMENDADO!</h2>
+    <hr>
+    
+    <h3>Estilo CSS Interno</h3>
+    <h4>Coloca o CSS dentro do cabeçalho (head)</h4>
+    <pre>
+    &lt;head&gt;
+        &lt;style&gt;
+            body {
+                background-color: COR;
+            }
+            h1 {
+                color: COR;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    </pre>
+
+    <h3>Estilo CSS Externo</h3>
+    <h4>Nesse, é necessário criar um arquivo externo chamado: <u>style.css</u></h4>
+
+    <p>No arquivo <u>style.css</u> coloque:</p>
+    <p>@charset "UTF-8;</p>
+    <p>EM seguida, pode colocar os parametros de estilo</p>
+
+    <p>Agora, no arquivo <u>.html</u> coloque no cabeçalho:</p>
+    <pre>
+    &lt;head&gt;
+        &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;/head&gt;
+    </pre>
+
+</body>
+</html>

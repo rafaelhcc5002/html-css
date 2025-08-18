@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Cores em CSS</title>
+</head>
+<body>
+
+        <h1>Representando cores em CSS</h1>
+
+        <ul>
+            <li>
+                <p>Pode ser representado por nome: </p>
+                <p>
+                    <pre>
+                        &lt;style&gt;
+
+                            body { 
+                                   color: COR;
+                            }
+                        &lt;/style&gt;
+                    </pre>
+                </p>
+            </li>
+            <li>
+                <p>Pode ser representado por código hexadecimal: </p>
+                <p>
+                    <pre>
+                        &lt;style&gt;
+
+                            body { 
+                                   color: #CODIGOCOR;
+                            }
+                        &lt;/style&gt;
+                    </pre>
+                </p>
+            </li>
+            <li>
+                <p>Pode ser representado por código RGB: </p>
+                <p>
+                    <pre>
+                        &lt;style&gt;
+
+                            body { 
+                                   color: rgb(VALOR, VALOR, VALOR);
+                            }
+                        &lt;/style&gt;
+                    </pre>
+                </p>
+            </li>
+            <li>
+                <p>Pode ser representado por código RGBA: </p>
+                <p>
+                    <pre>
+                        &lt;style&gt;
+
+                            body { 
+                                   color: rgba(VALOR, VALOR, VALOR, VALOR);
+                            }
+                        &lt;/style&gt;
+                    </pre>
+                </p>
+            </li>
+            <li>
+                <p>Pode ser representado por código HSL: </p>
+                <p>
+                    <pre>
+                        &lt;style&gt;
+
+                            body { 
+                                   color: hsl(VALOR, VALOR%, VALOR%);
+                            }
+                        &lt;/style&gt;
+                    </pre>
+                </p>
+            </li>
+            <li>
+                <p>Pode ser representado por código HSLA: </p>
+                <p>
+                    <pre>
+                        &lt;style&gt;
+
+                            body { 
+                                   color: hsla(VALOR, VALOR%, VALOR%, VALOR);
+                            }
+                        &lt;/style&gt;
+                    </pre>
+                </p>
+            </li>
+    </ul>
+
+    <h2>Criar degradê em CSS</h2>
+
+    <p>Para criar um degradê, você pode usar a propriedade background com a função linear-gradient.</p>
+    <p>Exemplo:</p>
+    <p>
+        <pre>
+            &lt;style&gt;
+
+                body { 
+                    background: linear-gradient(DIREÇÃO, COR1, COR2);
+                }
+            &lt;/style&gt;
+        </pre>
+    </p>
+    <p>Onde DIREÇÃO pode ser:</p>
+    <ul>
+        <li>to right -> para direita</li>
+        <li>to left -> para esquerda</li>
+        <li>to top -> para cima</li>
+        <li>to bottom -> para baixo</li>
+        <li>to top right -> de cima pra direita</li>
+        <li>to top left -> de cima pra esquerda</li>
+        <li>to bottom right -> de baixo para direita</li>
+        <li>to bottom left -> de baixo para esquerda</li>
+    </ul>
+    <p>Exemplo de uso:</p>
+    <p>
+        <pre>
+            &lt;style&gt;
+
+                body { 
+                    background: linear-gradient(to right, red, blue);
+                }
+            &lt;/style&gt;
+        </pre>
+    </p>
+    <p>Isso criará um degradê que vai do vermelho ao azul da esquerda para a direita.</p>
+    <p>Você também pode adicionar mais cores ao degradê, separando-as por vírgulas:</p>
+    <p>
+        <pre>
+            &lt;style&gt;
+
+                body { 
+                    background: linear-gradient(to right, red, yellow, blue);
+                }
+            &lt;/style&gt;
+        </pre>
+    </p>
+    <p>Isso criará um degradê que vai do vermelho ao amarelo e depois ao azul.</p>
+
+    <p>Você pode ajustar a opacidade das cores usando a função rgba:</p>
+    <p>
+        <pre>
+            &lt;style&gt;
+
+                body { 
+                    background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+                }
+            &lt;/style&gt;
+        </pre>
+    </p>
+    <p>Isso criará um degradê que vai do vermelho semitransparente ao azul semitransparente.</p>
+    <p>Você pode usar a função radial-gradient para criar um degradê radial:</p>
+    <p>
+        <pre>
+            &lt;style&gt;
+
+                body { 
+                    background: radial-gradient(circle, red, blue);
+                }
+            &lt;/style&gt;
+        </pre>
+    </p>
+    <p>Isso criará um degradê radial que vai do vermelho ao azul.</p>
+    <p>Você pode ajustar a posição do centro do degradê radial usando a propriedade background-position:</p>
+    <p>
+        <pre>
+            &lt;style&gt;
+
+                body { 
+                    background: radial-gradient(circle, red, blue);
+                    background-position: 50% 50%;
+                }
+            &lt;/style&gt;
+        </pre>
+    </p>
+    <p>Isso criará um degradê radial que vai do vermelho ao azul, com o centro do degradê na posição 50% 50%.</p>
+    <p>Você pode usar a função conic-gradient para criar um degradê cônico:</p>
+    <p>
+        <pre>
+            &lt;style&gt;
+
+                body { 
+                    background: conic-gradient(red, blue);
+                }
+            &lt;/style&gt;
+        </pre>
+    </p>
+
+    <p>Isso criará um degradê cônico que vai do vermelho ao azul.</p>
+
+    <p>Você pode ajustar a posição do centro do degradê cônico usando a propriedade background-position:</p>
+    <p>
+        <pre>
+            &lt;style&gt;
+
+                body { 
+                    background: conic-gradient(red, blue);
+                    background-position: 50% 50%;
+                }
+            &lt;/style&gt;
+        </pre>
+    </p>
+
+    <p>Isso criará um degradê cônico que vai do vermelho ao azul, com o centro do degradê na posição 50% 50%.</p>
+
+    
+ 
+    
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="miranha.ico" type="image/x-icon">
+    <title>Links</title>
+</head>
+<body>
+
+       <h1>Links e Âncoras</h1>
+
+        <h3>Links Externos: </h3>
+
+        <p>&lt;a href = "LinkDoSite" &gt; Texto_para_link&lt;/a&gt;</p>
+        <p> Exemplo: <a href = "LinkDoSite" > Texto_para_link</a></p>
+
+        <p>&#8627; Recomendação </p>
+
+        <p>&lt;a href = "LinkDoSite" target= "_blank" rel= " external"&gt;  &lt;/a&gt;</p>
+        <p>Exemplo: <a href = "LinkDoSite" target= "_blank" rel= " external"> </a></p>
+
+        <p>Na tag &lt;target= "   "&gt;
+
+            <ul type="disc">
+                <li>_blank: Abre o link em uma nova aba em branco</li>
+                <li>_self (Padrão): Abre o link na mesma aba ou frame atual</li>
+                <li>_parent: Similar ao <ins> _top </ins> , em uma referência a janela mãe</li>
+                <li>_top: Vai desfazer todos os frames e abrir o destino no navegador completo</li>
+
+            </ul>
+        </p>
+
+        <p>Na tag &lt;rel="   "&gt;
+            
+                <ul type="disc">
+                    <li>next: O link é para a próxima parte do documento atual</li>
+                    <li>prev: O link é para a parte anterior do documento atual</li>
+                    <li>external: O link é para outro site que não faz parte do site</li>
+                    <li>nofollow: O link para um site não assegurado, como um link pago</li>
+                    <li>author: O link para o site do autor do artigo atual</li>
+                </ul>
+        </p>
+
+        <p>href lang= "lingua"</p>
+
+        <h3>Links internos: </h3>
+
+        <p>&#x2B8E; Site 01 &lt;a href = "linkInternal" rel="next"&gt; Texto &lt;/a&gt;</p>
+        <p>&#x2B8E; Site 02 &lt;a href="link" rel="prev"&gt; Texto  &lt;/a&gt;</p>
+
+        <p>Exemplo: <a href = "linkInternal" rel="next"> Texto </a></p>
+        <p>Exemplo: <a href = "link" rel="prev"> Texto </a></p>
+
+        <p>* Caso o site esteja dentro de um pasta, é necessário informar o caminho certo para funcionar</p>
+
+        &lt;a href = "Link"&gt;...
+        <blockquote>&#x2B8E;<strong>(./)</strong>-> Indica a pasta atual do servidor</blockquote>
+        <blockquote>&#x2B8E;<strong>(../)</strong>-> Indica a pasta imediatamente superior na hierarquia,
+             use para voltar um nivel para a pasta mais externa</blockquote>
+
+        <h3>Links para download: </h3>
+
+        <h4>-Fazer downloand de um livro PDF:</h4>
+
+        <p>&lt;a href= "#"&gt; BaixarPDF &lt;/a&gt;</p>
+        <blockquote>&#x2B8E; "#" -> Pegar o arquivo na pasta e colocar, esse simbolo <ins>#</ins> significa que o arquivo esta vazio</blockquote>
+        <p><blockquote>Esse comando não faz downloand, apenas abre</blockquote></p>
+
+        <blockquote>
+            <a href= "#"> BaixarPDF </a>
+        </blockquote>
+
+        <p>&lt;a href= "#" download= "nomeDoArquivo.PDF" type="application/pdf" &gt; BaixarPDF &lt;/a&gt;</p>
+
+        <blockquote>
+            <a href= "#" download= "nomeDoArquivo.PDF" type="application/pdf" > BaixarPDF </a>
+        </blockquote>
+
+        <p>*Mesma forma com o .zip</p>
+        <p><blockquote>- application/zip<blockquote>
+            <a href= "#" download= "nomeDoArquivo.ZIP" type="application/zip" > BaixarZIP </a>
+        </p>
+
+        <p>
+            <a href = "https://www.iana.org/assignments/media-types/media-types.xhtml" target= "_blank" rel= " external">&#x2B8E; PARA MAIS COMANDOS!</a>  
+        </p>
+
+        
+
+            
+        
+
+
+        
+        
+
+        
+
+
+
+
+      
+
+
+
+
+</body>
+</html>
